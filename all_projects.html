@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Projects</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .projects-section {
+            padding: 50px 0;
+            width: 100%;
+            text-align: center;
+        }
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 0 20px;
+        }
+        .project-card {
+            
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+            color: #333;
+        }
+        .project-card h2 {
+            font-size: 20px;
+        }
+        .project-card img {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        .project-card button {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        a {
+            
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+      
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333; 
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Background color matches your design */
+}
+
+
+.home-icon {
+    position: absolute;
+    top: 20px; 
+    left: 20px; 
+    width: 60px; 
+    height: 60px; 
+    background-color: #ffcc00; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    overflow: hidden; 
+}
+
+
+.home-icon a {
+    text-decoration: none;
+    color: #333; 
+    font-size: 24px; 
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+.home-icon a:hover {
+    color: #000; 
+    transform: scale(1.1); 
+}
+.project-card:hover .project-info {
+        display: flex;
+    }
+.project-info {
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start off-screen to the left */
+    width: 100%; /* Ensure it spans the full width of the card */
+    height: 100%; /* Full height to cover the card */
+    background: #000; /* Solid black background */
+    color: white; /* White text color */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    text-align: center; /* Center text alignment */
+    padding: 20px; /* Add more padding to ensure text does not touch the edges */
+    border-radius: 10px; /* Rounded corners like the card */
+    transition: left 0.5s ease; /* Smooth transition for the sliding effect */
+    overflow: hidden; /* Hide any overflow */
+    box-sizing: border-box; /* Include padding and border in the width and height calculations */
+}
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Main Projects Section -->
+<div class="projects-section" style="background: #333; padding: 50px 0; width: 100%;">
+    <h1 style="color: #ffcc00; text-align: center; font-size: 36px; margin-bottom: 40px;">Projects</h1>
+    <div class="projects-container" style="display: flex; justify-content: center; gap: 20px; overflow-x: auto; padding: 0 20px;">
+        <!-- Project 1: Priority Scheduler in Operating Systems -->
+        <div class="project-card" onmouseover="showInfo(this)" onmouseout="hideInfo(this)" style="color: #ffcc00;width: 300px; padding: 20px; border-radius: 10px; position: relative; overflow: hidden;">
+            <h2 style="font-size: 20px; color: #ffcc00;"> Smart car parking using Image Processing | Python, OpenCV , IoT, Cloud Computing</h2>
+            <img src="images/cloud.png" alt="Priority Scheduler Project" style="width: 100%; height: 100%; margin-top: 20px;">
+            <div class="project-info" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #000; color: white; display: none; align-items: center; justify-content: center; text-align: center; padding: 10px; border-radius: 10px;">
+                <p>Developed a real-time parking occupancy detection system using Python, OpenCV, and Hough Line Transform for accurate image analysis. Deployed the solution on Amazon EC2 with NGINX for scalable, cloud-based access, providing a live web interface for parking spot availability.</p>
+            </div>
+        </div>
+        <!-- Project 2: Driver Drowsiness Detection -->
+        <div class="project-card" onmouseover="showInfo(this)" onmouseout="hideInfo(this)" style="width: 300px; padding: 20px; border-radius: 10px; position: relative; overflow: hidden;">
+            <h2 style="font-size: 20px; color: #ffcc00;">Python Image Forgery Detection Using D5 and OpenCV</h2>
+            <img src="images/image forge.png" alt="Driver Drowsiness Detection Project" style="width: 100; height: 100%; margin-top: 20px;">
+            <div class="project-info" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #000; color: white; display: none; align-items: center; justify-content: center; text-align: center; padding: 10px; border-radius: 10px;">
+                <p>Developed and deployed an advanced image forgery detection platform using Python, MD5 hashing, and OpenCV, achieving 95% accuracy and reducing detection time by 40%. Integrated with WAMP Server and MySQL 5.6, improving detection efficiency by 50% and providing real-time tampering likelihood with confidence scores.
+            </div>
+        </div>
+
+
+        
+        <div class="home-icon">
+            <a href="index.html">
+                <i class="fas fa-home"></i>
+            </a>
+        </div>
+        
+        <!-- Include Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <script>
+            function showInfo(element) {
+                element.querySelector('.project-info').style.display = 'flex';
+            }
+            function hideInfo(element) {
+                element.querySelector('.project-info').style.display = 'none';
+            }
+        </script>
+        
+        
+        
+</body>
+</html>
